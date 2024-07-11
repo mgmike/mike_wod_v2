@@ -1,0 +1,5 @@
+name: wod_v2
+
+dependencies:
+  - python=3.10
+  - tensorflow==2.12.0
