@@ -1,0 +1,46 @@
+    1  ls
+    2  sudo apt update
+    3  sudo apt install python3.10
+    4  sudo apt install software-properties-common -y
+    5  sudo add-apt-repository ppa:deadsnakes/ppa -y
+    6  sudo apt install python3.10
+    7  sudo apt install python3.10-dev
+    8  sudo apt install python3.10-distutils
+    9  sudo apt install python3.10-venv
+   10  curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
+   11  echo 'export PATH=/home/<USER>/.local/bin:$PATH' >>~/.profile
+   12  source ~/.profile
+   13  pip install --upgrade pip
+   14  sudo apt install python-is-python3
+   15  sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.10 1
+   16  python --version
+   17  jupyter notebook
+   18  which jupyter
+   19  python3
+   20  python --version
+   21  sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
+   22  python3
+   23  jupyter notebook
+   24  python3 -m pip install gcsfs waymo-open-dataset-tf-2-12-0==1.6.4
+   25  python3 -m pip install "notebook>=5.3" "ipywidgets>=7.5"
+   26  python3 -m pip install --upgrade "jupyter_http_over_ws>=0.0.7"
+   27  jupyter serverextension enable --py jupyter_http_over_ws
+   28  python3 -m pip install nbclassic
+   29  python3 -m pip install tensorflow==2.12.0
+   30  jupyter serverextension enable --py jupyter_http_over_ws
+   31  jupyter notebook
+   32  which jupyter
+   33  conda activate
+   34  python3 -m pip install jupyter
+   35  python3 -m pip install --upgrade "jupyter_http_over_ws>=0.0.7"
+   36  jupyter serverextension enable --py jupyter_http_over_ws
+   37  which jupyter
+   38  echo $PATH
+   39  PATH="/usr/loca/bin:$PATH"
+   40  which jupyter
+   41  PATH="/home/wod_v2/.local/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+   42  echo $PATH
+   43  jupyter --version
+   44  jupyter
+   45  jupyter notebook
+   46  history > history_no_conda.txt
