@@ -1,4 +1,7 @@
 .ipynb_checkpoints/
+__pycache__/
+.Trash-1000/
+.vscode/
 datasets/
 data/
 runs/
