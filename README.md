@@ -19,5 +19,18 @@ Use cranky_cannon for conda
     $ jupyter serverextension enable --py jupyter_http_over_ws
     $ jupyter notebook
 
+This one is fragile. Used for reading waymo data and saving in a format that yolo can read
+
 use magical_payne for base python3.8 -> python3.10
 PATH="/home/wod_v2/.local/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+Using this premade docker image
+docker pull daisukekobayashi/darknet:darknet_yolo_v4_pre-gpu
+
+docker run --runtime=nvidia --rm -v $PWD:/workspace -v /media/mike/Main\ Drive\ Ubunt/Documents/data/perception_2.0.0_yolov4/:/home/yolo/src/wodp2 -w /workspace daisukekobayashi/darknet:gpu darknet
+PATH="/home/yolo/.local/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+Todo: 
+- Save as jpeg too
+- Save txt alongside jpeg
+- Save cam and lidar txt alongside jpeg too
